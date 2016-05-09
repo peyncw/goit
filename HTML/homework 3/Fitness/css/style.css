@@ -1,0 +1,168 @@
+* {
+    padding: 0;
+    margin: 0;
+    transition: 0.5s;
+}
+
+/*BODY*/
+
+body {
+    background: #f9f9f9;
+    font-family: Tahoma;
+}
+.body {
+    margin: 0 auto;
+    padding-top: 40px;
+    width: 1060px;
+    background: rgb(255, 255, 255);
+    box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.25);
+}
+.body_main {
+    margin: 0 auto;
+    padding-bottom: 60px;
+    width: 966px;
+}
+
+/*LEGO*/
+
+.logo {
+    height: 80px;
+}
+.logo_ {
+    text-align: left;
+    text-decoration: none;
+    color: #323232;
+    font-size: 40px;
+}
+.logo:link {
+    color: #323232;
+}
+
+/*MENU*/
+
+.nav {
+    display: block;
+    list-style-type: none;
+    height: 40px;
+    background: linear-gradient(to top, #5e5e5e, #444343);
+}
+.nav li {
+    margin-right: 20px;
+    display: inline-block;
+}
+.nav a {
+    display: inline-block;
+    width: 100px;
+    padding: 11px 0;
+    text-decoration: none;
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    text-shadow: 1px 1px 1px black;
+    border-left: 1px solid rgba(0, 0, 0, 0);
+    border-right: 1px solid rgba(0, 0, 0, 0);
+}
+.nav a:hover {
+    background: linear-gradient(to top, #2f2f2f, #4a4a4a);
+    border-left: 1px solid #838383;
+    border-right: 1px solid #838383;
+}
+
+/*CONTAINER*/
+
+.container {
+    padding-top: 40px;
+    min-height: 600px;
+}
+
+/*LEFT MENU*/
+
+.menu_left {
+    width: 241px;
+    float: left;
+}
+.menu_left ul {
+    display: block;
+    list-style-type: none;
+    height: 240px;
+    width: 239px;
+    border-bottom: 1px solid #c8c8c8;
+    border-left: 1px solid #c8c8c8;
+    border-right: 1px solid #c8c8c8;
+}
+.menu_left li {
+    display: block;
+    border-top: 1px solid #c8c8c8;
+    height: 39px;
+}
+.menu_left a {
+    display: block;
+    padding: 10px 0 10px 21px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: normal;
+    color: #656363;
+    text-align: left;
+}
+.menu_left a:hover {
+    transition: 0.5s;
+    padding-left: 36px;
+    color: #000000;
+}
+
+/*CONTENT*/
+
+.content_right {
+    width: 678px;
+    float: right;
+}
+.main_image {
+    height: 400px;
+    border: 1px solid #c8c8c8;
+    background-image: url(../img/velo_img.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.text_box {
+    padding: 40px 24px;
+}
+
+/*FOOTER*/
+
+.footer {
+    display: block;
+    height: 40px;
+    background-color: #e1e1e1;
+}
+.footer ul {
+    display: block;
+    list-style-type: none;
+}
+.footer li {
+    display: inline-block;
+    margin-right: 20px;
+}
+.footer a {
+    display: inline-block;
+    width: 100px;
+    padding: 11px 0;
+    text-decoration: none;
+    font-size: 14px;
+    color: #373737;
+    text-align: center;
+}
+.footer a:hover {
+    text-decoration: underline;
+}
+.footer div {
+    display: block;
+    float: right;
+}
+.copyright {
+    display: block;
+    padding: 11px 0;
+    float: right;
+    font-size: 14px;
+    color: #373737;
+    text-align: right;
+}
