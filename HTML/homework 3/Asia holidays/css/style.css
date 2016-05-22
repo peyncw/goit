@@ -1,4 +1,39 @@
-*{
-  margin: 0;
-  padding: 0;
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: url(../img/background.jpg) #050505 no-repeat center;
+}
+.main {
+    margin: 0 auto;
+    min-height: 880px;
+    width: 812px;
+}
+.header {
+    height: 200px;
+}
+.logo {
+    padding-top: 45px;
+    display: block;
+    float: left;
+}
+.contact {
+    width: 115px;
+    padding-top: 145px;
+    float: right;
+    color: #e6e6e6;
+    font-size: 11px;
+    text-align: left;
+}
+.contact p:first-child {
+    font-weight: bold;
+}
+.container {
+  height: 450px;
+}
+.footer {
+    color: #e6e6e6;
+    padding-top: 185px;
+    text-align: center;
 }
