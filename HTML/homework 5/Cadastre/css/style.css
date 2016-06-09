@@ -1,0 +1,232 @@
+@font-face {
+	font-family: "Helvetica Neue";
+	src: url("../fonts/HelveticaNeue.ttf");
+	font-weight: normal;
+	font-style: normal;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: "Helvetica Neue", Tahoma;
+	background: url("../img/background.jpg") no-repeat center top;
+	background-size: cover;
+}
+
+/* Menu */
+.main_menu {
+	overflow: hidden;
+	padding: 0 20px;
+	background: linear-gradient(to top, #085292, #074d8a);
+	font-size: 14px;
+}
+
+.main_menu ul > li {
+	float: left;
+}
+
+.main_menu ul {
+	display: inline-block;
+	list-style: none;
+}
+
+.menu {
+	float: right;
+}
+
+.menu li > a {
+	display: inline-block;
+	padding: 10px;
+	text-decoration: none;
+	color: #60b5ed;
+}
+
+.menu li > a:hover {
+	color: #ffffff;
+	background: #4eabda;
+}
+
+.menu li > div {
+	display: inline-block;
+	float: left;
+}
+
+.menu div > a {
+	display: inline-block;
+	color: #ffffff;
+}
+
+.line_menu:before {
+	display: block;
+	content: '';
+	margin: 2px 0;
+	padding: 9px 0;
+	float: left;
+	height: 1em;
+	border-left: 1px solid #56a2dc;
+}
+
+.offers {
+	margin-left: 10px;
+	padding: 10px 10px 10px 33px;
+	text-decoration: none;
+	background: url("../img/icon_flag.png") no-repeat left center;
+}
+
+.enter {
+	padding: 10px;
+	color: #ffffff;
+	border-left: 1px solid #57a2dd;
+	border-right: 1px solid #57a2dd;
+	background: linear-gradient(to top, #2e7ac4, #4faedb);
+}
+
+.enter a:hover {
+	text-decoration: none;
+}
+
+/* Wrapper and form */
+.wrapper {
+	padding: 10% 0;
+
+}
+
+.main_form {
+	margin: 0 auto;
+	width: 560px;
+	height: 610px;
+	background: rgba(0, 0, 0, 0.75);
+}
+
+h1 {
+	padding: 18px 0;
+	text-align: center;
+	font-size: 24px;
+	font-weight: normal;
+	color: #ffffff;
+	border-bottom: 1px solid #c2cab5;
+}
+
+.facebook {
+	margin: 36px auto 0 auto;
+	display: block;
+	width: 276px;
+	line-height: 34px;
+	font-size: 15px;
+	overflow: hidden;
+	text-align: center;
+	text-decoration: none;
+	color: #f7feff;
+}
+
+/*Facebook button*/
+.facebook div {
+	display: inline-block;
+	float: left;
+}
+
+.facebook div:first-child {
+	width: 38px;
+	height: 34px;
+	font-size: 26px;
+	font-weight: bold;
+	border-radius: 5px 0 0 5px;
+	border-top: 1px solid #7889b5;
+	border-right: 1px solid #1d3c73;
+	background: linear-gradient(to top, #314373, #3f5793);
+}
+
+.facebook div:last-child {
+	width: 236px;
+	height: 34px;
+	border-radius: 0 5px 5px 0;
+	border-top: 1px solid #7889b5;
+	border-left: 1px solid #4b67a6;
+	background: linear-gradient(to top, #314373, #3f5793);
+}
+
+.facebook span {
+	font-weight: bold;
+}
+
+.facebook span:last-child {
+	font-family: Tahoma;
+	padding-left: 20px;
+}
+
+.line_form {
+	margin: 28px auto;
+	width: 275px;
+	overflow: hidden;
+}
+
+.line_form div {
+	float: left;
+}
+
+.line_form_border {
+	position: relative;
+	top: 0.45em;
+	width: 121px;
+	border-top: 1px solid #666;
+	border-bottom: 1px solid #000;
+}
+
+.line_form_text {
+	margin: 0 6px;
+	font-size: 14px;
+	color: #7c7e7b;
+}
+
+.wrapper_input {
+	margin: 0 auto;
+	width: 276px;
+}
+
+.input_form_reg {
+	margin-bottom: 15px;
+	padding-left: 20px;
+	width: 254px;
+	height: 34px;
+	font-size: 14px;
+	color: #d1d6e0;
+	border: 1px solid #10100f;
+	border-bottom: 1px solid #494948;
+	background: #000;
+}
+
+.input_form_reg:focus {
+	outline: 0;
+	border: 1px solid #1e4b76;
+	border-bottom: 1px solid #689bcc;
+	background-color: #1b5288;
+	box-shadow: 0 0 9px 2px rgba(105, 155, 204, 1);
+}
+
+.checkbox_form_reg {
+	color: #adaca9;
+	font-size: 14px;
+}
+
+.submit_reg {
+	margin: 20px auto;
+	padding: 8px 0;
+	display: block;
+	width: 150px;
+	font-size: 14px;
+	color: #fff;
+	border-radius: 3px;
+	border: 1px solid #3686ca;
+	background: linear-gradient(to top, #2e7ac4, #50aedb);
+}
+
+.privacy_policy {
+	margin: 0 auto;
+	width: 330px;
+	color: #adaca9;
+	font-size: 11px;
+	text-align: center;
+}
