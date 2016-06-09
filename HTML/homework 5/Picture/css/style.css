@@ -1,0 +1,39 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+table {
+	margin: 0 auto;
+	border-collapse: collapse;
+}
+
+table tr {
+	height: 100px;
+}
+
+table td {
+	border: 10px solid #000;
+	width: 100px;
+	height: 100px;
+}
+
+.black {
+	background-color: #000;
+}
+
+.blue {
+	background-color: #064682;
+}
+
+.yellow {
+	background-color: #ffef74;
+}
+
+.red {
+	background-color: #ff5c30;
+}
+
+table tr:last-child > td {
+	border: none;
+}
