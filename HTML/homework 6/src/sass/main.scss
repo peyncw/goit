@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+  font-family: "Lucida Sans";
+  src: url(../font/lucida_sans_unicode.ttf);
+}
+@font-face {
+  font-family: MagnetoB;
+  src: url(../font/MAGNETOB.ttf);  
+}
+body {
+  font-family: "Lucida Sans", Tahoma, sans-serif;
+}
+@import 'variables';
+@import 'MediaQueries/main';
+

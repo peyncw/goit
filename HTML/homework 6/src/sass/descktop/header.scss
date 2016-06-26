@@ -1,0 +1,86 @@
+.wrapper {
+  margin: 0 auto;
+  padding-top: 18px;
+  width: $main_width;
+  overflow: hidden;
+
+  .header {
+    .circle_big {
+      $wh: 21px;
+      width: $wh;
+      height: $wh;
+      float: left;
+      border-radius: $wh / 2;
+      background: $gradient_1;
+    }
+    .numbers {
+      margin: 4px 0 0 5px;
+      width: 292px;
+      height: 26px;
+      float: left;
+      span {
+        font: 18px Arial;
+        font-weight: normal;
+        letter-spacing: 0.024em;
+        margin-left: 5px;
+        color: $font_color1;
+      }
+    }
+    .login {
+      margin: 0 15px;
+      float: left;
+      min-width: 495px;
+      height: 26px;
+      border-radius: 3px;
+      background: $gradient_1;
+      .login_form {
+        float: left;
+        height: 26px;
+        line-height: 1em;
+        .img_autor {
+          margin: 0 1px 0 7px;
+          float: left;
+          width: 17px;
+          height: 26px;
+          background: url("../images/autor.png") no-repeat center left;
+        }
+        .input_text {
+          margin: 4px 3px 0 0;
+          height: 12px;
+          width: 109px;
+          text-indent: 2px;
+          font-size: $font_size2;
+        }
+        .submit_autor {
+          font-size: $font_size2;
+          color: #fff;
+          letter-spacing: 0.01em;
+          background: none;
+          border: none;
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+         a {
+           display: inline-block;
+           color: #fff;
+           font-size: $font_size2;
+         }
+        .reg {
+          text-decoration: none;
+          letter-spacing: -0.02em;
+          margin: 4px 5px 0 0;
+          padding-left: 4px;
+          float: left;
+        }
+        .recovery_pass {
+          margin: 5px 10px 0 0;
+          float: right;
+          &:hover {
+            text-decoration: none;
+          }
+        }
+    }
+  }
+}
