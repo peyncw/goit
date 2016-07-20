@@ -1,3 +1,4 @@
+@import 'variables';
 * {
   margin: 0;
   padding: 0;
@@ -13,6 +14,10 @@
 body {
   font-family: "Lucida Sans", Tahoma, sans-serif;
 }
-@import 'variables';
-@import 'MediaQueries/main';
+.wrapper {
+  margin: 0 auto;
+  padding-top: 18px;
+  width: $main_width;
 
+  @import 'descktop';
+}

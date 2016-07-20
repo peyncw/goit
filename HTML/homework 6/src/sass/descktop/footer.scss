@@ -1,0 +1,45 @@
+footer {
+	& > div {
+		&:first-child {
+			height: 90px;
+			background: url("../images/brend.png") center no-repeat;
+		}
+		&:last-child {
+			height: 100px;
+			background: #213a4d;
+			border-radius: 2px 2px 0 0;
+			& > nav {
+				text-align: center;
+				& > a{
+					display: inline-block;
+					margin: 15px 12px 15px 0;
+					padding-left: 12px;
+					font: 12px Arial;
+					color: #bec6c9;
+					text-decoration: none;
+					border-left: 1px solid #bec6c9;
+					line-height: 12px;
+					&:hover {
+						color: #52abcb;
+					}
+					&:first-child {
+						border: none;
+					}
+				}
+			}
+			& > div {
+				text-align: center;
+				font: 10px Arial;
+				color: #7f4740;
+				& > a {
+					margin-left: 3px;
+					text-decoration: none;
+					color: #7f4740;
+					&:hover {
+						text-decoration: underline;
+					}
+				}
+			}
+		}
+	}
+}
