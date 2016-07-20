@@ -1,86 +1,177 @@
-.wrapper {
-  margin: 0 auto;
-  padding-top: 18px;
-  width: $main_width;
-  overflow: hidden;
+.header {
+	.numbers {
+		margin: 4px 0 0 7px;
+		width: 293px;
+		height: 26px;
+		float: left;
+		line-height: 1.5em;
+		.circle_big {
+			width: 21px;
+			height: 21px;
+			float: left;
+			border-radius: 10px;
+			background: $gradient_1;
+		}
+		span {
+			font: 18px Arial;
+			font-weight: normal;
+			letter-spacing: 0.024em;
+			margin: 0 1px 0 4px;
+			color: $font_color1;
+		}
+	}
+	.login {
+		margin: 0 14px;
+		float: left;
+		min-width: 495px;
+		height: 26px;
+		border-radius: 3px;
+		background: $gradient_1;
+		box-shadow: 2px 2px 3px 0 rgba(0, 0, 0, 0.35);
+		.login_form {
+			float: left;
+			height: 26px;
+			line-height: 1em;
+			.img_autor {
+				margin: 0 1px 0 7px;
+				float: left;
+				width: 17px;
+				height: 26px;
+				background: url("../images/autor.png") no-repeat center left;
+			}
+			.input_text {
+				margin: 4px 3px 0 0;
+				max-height: 12px;
+				width: 109px;
+				text-indent: 2px;
+				font-size: $font_size2;
+			}
+			.submit_autor {
+				font-size: $font_size2;
+				color: #fff;
+				letter-spacing: 0.01em;
+				background: none;
+				border: none;
+				&:hover {
+					cursor: pointer;
+				}
+			}
+		}
+		a {
+			display: inline-block;
+			color: #fff;
+			font-size: $font_size2;
+			text-decoration: none;
+		}
+		.reg {
+			letter-spacing: -0.02em;
+			margin: 4px 5px 0 0;
+			padding-left: 4px;
+			float: left;
+		}
+		.recovery_pass {
+			margin: 4px 10px 0 0;
+			height: 1.39em;
+			float: right;
+			letter-spacing: 0.049em;
+			color: #aeaeae;
+			border-bottom: 1px solid #aeaeae;
+			&:hover {
+				border-bottom: none;
+			}
+		}
+	}
+	.site_map {
+		width: 75px;
+		height: 20px;
+		float: right;
+		margin: 0 8px 0 0;
+		border: 1px solid #ced3d5;
+		border-radius: 10px;
+		line-height: 20px;
+		box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.25);
+		& > a {
+			display: inline-block;
+			height: 10px;
+			width: 15px;
+		}
+		.home {
+			margin-left: 7px;
+			background: url("../images/home.png") no-repeat center;
+		}
+		.map {
+			margin: 0 7px;
+			background: url("../images/map.png") no-repeat center;
+		}
+		.contact {
+			margin-right: 7px;
+			background: url("../images/contact.png") no-repeat center;
+		}
+	}
+}
 
-  .header {
-    .circle_big {
-      $wh: 21px;
-      width: $wh;
-      height: $wh;
-      float: left;
-      border-radius: $wh / 2;
-      background: $gradient_1;
-    }
-    .numbers {
-      margin: 4px 0 0 5px;
-      width: 292px;
-      height: 26px;
-      float: left;
-      span {
-        font: 18px Arial;
-        font-weight: normal;
-        letter-spacing: 0.024em;
-        margin-left: 5px;
-        color: $font_color1;
-      }
-    }
-    .login {
-      margin: 0 15px;
-      float: left;
-      min-width: 495px;
-      height: 26px;
-      border-radius: 3px;
-      background: $gradient_1;
-      .login_form {
-        float: left;
-        height: 26px;
-        line-height: 1em;
-        .img_autor {
-          margin: 0 1px 0 7px;
-          float: left;
-          width: 17px;
-          height: 26px;
-          background: url("../images/autor.png") no-repeat center left;
-        }
-        .input_text {
-          margin: 4px 3px 0 0;
-          height: 12px;
-          width: 109px;
-          text-indent: 2px;
-          font-size: $font_size2;
-        }
-        .submit_autor {
-          font-size: $font_size2;
-          color: #fff;
-          letter-spacing: 0.01em;
-          background: none;
-          border: none;
-          &:hover {
-            cursor: pointer;
-          }
-        }
-      }
-         a {
-           display: inline-block;
-           color: #fff;
-           font-size: $font_size2;
-         }
-        .reg {
-          text-decoration: none;
-          letter-spacing: -0.02em;
-          margin: 4px 5px 0 0;
-          padding-left: 4px;
-          float: left;
-        }
-        .recovery_pass {
-          margin: 5px 10px 0 0;
-          float: right;
-          &:hover {
-            text-decoration: none;
-          }
-        }
-    }
-  }
+.banner {
+	padding: 5px 0;
+	width: 909px;
+	height: 236px;
+	background: url("../images/banner.jpg") no-repeat center;
+	clear: both;
+}
+
+.main_menu {
+	width: 908px;
+	height: 32px;
+	margin: 3px 0 0 0;
+	background: linear-gradient(to bottom, #4c4c4c 0%, #595959 9%, #303030 17%, #000000 100%);
+	border: 1px solid #2c345a;
+	border-radius: 5px;
+	line-height: 32px;
+	box-shadow: 2px 2px 3px 0 rgba(0, 0, 0, 0.35);
+	& > .menu {
+		display: inline-block;
+		margin-left: 130px;
+		& > a {
+			display: inline-block;
+			padding: 0 13px;
+			height: 25px;
+			color: #b1bcc0;
+			font-size: 14px;
+			line-height: 25px;
+			text-align: center;
+			border-radius: 10px;
+			text-decoration: none;
+			&:hover {
+				color: #fff;
+				background: $gradient_1;
+			}
+		}
+	}
+	.basket {
+		display: inline-block;
+		height: 32px;
+		float: right;
+		color: #798084;
+		font: 11px Arial;
+		& > span {
+			display: inline-block;
+			line-height: 32px;
+		}
+		& > a {
+			display: inline-block;
+			margin-right: 12px;
+			line-height: 32px;
+			text-decoration: none;
+			color: #0e578a;
+			font-size: 12px;
+			&:last-child {
+				margin-left: 15px;
+			}
+		}
+		.basket_img {
+			& > img {
+				display: inline-block;
+				vertical-align: middle;
+			}
+		}
+	}
 }
