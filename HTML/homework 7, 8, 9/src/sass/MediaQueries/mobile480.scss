@@ -1,0 +1,164 @@
+@media all and #{$mobile480} {
+	@import "../mobile";
+	.header-container {
+		& > header {
+			width: 480px;
+			overflow: hidden;
+			.header__descktop-wrapper {
+				width: auto;
+				margin: 0;
+			}
+			.main-menu {
+				z-index: 1;
+				.main-menu__wrapper {
+					width: 244px;
+					& > li {
+						& > a {
+							height: 40px;
+							line-height: 40px;
+						}
+					}
+					.main-menu__item1 {
+						height: 40px;
+						& > span {
+							height: 38px;
+							line-height: 38px;
+						}
+					}
+				}
+			}
+			.header__slider-background {
+				display: block;
+				margin-top: 95px;
+				position: absolute;
+				height: 245px;
+				left: 0;
+				right: 0;
+				background: rgba(0, 0, 0, 0.2);
+			}
+			.header__slider {
+				margin: 85px 0 35px 0;
+				position: relative;
+				.header__slider-body {
+					margin-top: 90px;
+					width: 246px;
+				}
+				.header__slider-phone {
+					float: left;
+					width: 190px;
+					height: 305px;
+					background: url("../images/header__slider-phone.png") no-repeat center;
+				}
+				.header__slider-arrow-left, .header__slider-arrow-right {
+					margin-top: 90px;
+				}
+				.header-button {
+					padding-top: 0;
+					position: relative;
+					top: -25px;
+				}
+			}
+		}
+	}
+	.section-a__container {
+		.section-a {
+			width: 480px;
+			& > div {
+				width: 480px;
+			}
+			.section-a__textbox {
+				width: 380px;
+			}
+		}
+	}
+	.section-b__container {
+		.section-b {
+			width: 480px;
+			.section-b__comments {
+				.section-b__comments-box {
+					width: 416px;
+					height: 270px;
+					.section-b__textbox {
+						margin: 25px 15px 30px 35px;
+						width: auto;
+						& > h4 {
+							& > span {
+								margin-left: 5px;
+								display: inline-block;
+							}
+						}
+					}
+				}
+			}
+			.section-b__update-post {
+				padding: 0;
+				width: 440px;
+				margin: 0 20px 0 20px;
+			}
+		}
+	}
+	.section-c__container {
+		border-bottom: 1px solid #fefefe;
+		box-shadow: none;
+		.section-c {
+			width: 480px;
+		}
+	}
+	.section-d__container {
+		position: relative;
+		overflow: hidden;
+		display: block;
+		border-top: 1px solid #d8d8d8;
+		background: #ececec;
+		box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+		.section-d {
+			overflow: hidden;
+			margin: 80px auto 30px auto;
+			width: 480px;
+			.section-d__textbox {
+				margin-bottom: 60px;
+				float: left;
+				color: #454545;
+				width: 440px;
+				& > h4, p {
+					margin: 0 20px;
+				}
+				& > h4 {
+					font: 24px "League Gothic";
+				}
+				& > p {
+					font: 16px "OpenSans Light";
+				}
+			}
+		}
+	}
+	.footer__container {
+		padding: 40px 0 80px 0;
+		.footer {
+			width: 480px;
+			.footer__menu {
+				margin-bottom: 30px;
+				display: block;
+				text-align: center;
+				.footer__menu-wrapper {
+					& > li {
+						display: inline-block;
+						& > a {
+							margin: 0 10px;
+							text-decoration: none;
+							font: 20px "League Gothic";
+							color: #fff;
+							text-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
+							&:hover {
+								text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+							}
+						}
+					}
+				}
+			}
+			.footer__link {
+				margin: 0;
+			}
+		}
+	}
+}

@@ -1,0 +1,7 @@
+@media all and #{$tablet} {
+	@import "../descktop";
+	.header__descktop-wrapper {
+		width: auto;
+		margin: 0;
+	}
+}

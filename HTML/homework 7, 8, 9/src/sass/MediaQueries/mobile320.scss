@@ -1,0 +1,14 @@
+
+@media all and #{$mobile320} {
+	@import "../mobile";
+	.header__slider-background {
+		display: none;
+	}
+	.header__slider-phone {
+		display: none;
+	}
+	.header__descktop-wrapper {
+		width: auto;
+		margin: 0;
+	}
+}

@@ -1,0 +1,113 @@
+.section-b__container {
+	background: #f9f9f9;
+	border-bottom: 1px solid #e6e6e6;
+	overflow: hidden;
+	.section-b {
+		margin: 0 auto;
+		padding-bottom: 90px;
+		width: 320px;
+		overflow: hidden;
+		.section-b__comments {
+			padding: 70px 20px;
+			float: left;
+			.section-b__comments-box {
+				margin-left: 22px;
+				width: 256px;
+				border: 1px solid #f6f6f6;
+				background: #fff;
+				.section-b__comments-avatar {
+					margin-top: 20px;
+					position: relative;
+					left: -22px;
+					float: left;
+					width: 47px;
+					height: 47px;
+					border-radius: 23px;
+					overflow: hidden;
+				}
+				.section-b__textbox {
+					margin: 25px 0 30px 35px;
+					width: 180px;
+					& > h4 {
+						font: 24px "League Gothic";
+						color: #454545;
+						line-height: 24px;
+						& > span {
+							display: block;
+							color: #edbfff;
+						}
+					}
+					& > p {
+						margin-top: 5px;
+						font: 16px "OpenSans Light";
+						color: #454545;
+					}
+				}
+			}
+			.section-b__slider-comments {
+				margin: 0 auto;
+				padding-top: 25px;
+				clear: both;
+				width: 84px;
+				overflow: hidden;
+				& > div {
+					margin-right: 5px;
+					float: left;
+					width: 17px;
+					height: 17px;
+					background: url("../images/section-b__slider-comments-non-active.svg") no-repeat center;
+					&:last-child {
+						margin-right: 0;
+					}
+					&:hover {
+						cursor: pointer;
+					}
+				}
+				.section-b__slider-comments-active {
+					background: url("../images/section-b__slider-comments-active.svg") no-repeat center;
+				}
+			}
+		}
+		.section-b__update-post {
+			padding: 0 20px 0 20px;
+			float: left;
+			color: #454545;
+			overflow: hidden;
+			& > span {
+				font: 30px "League Gothic";
+			}
+			.section-b__post {
+				margin: 20px 0;
+				overflow: hidden;
+				.section-b__post-avatar {
+					float: left;
+					width: 47px;
+					height: 47px;
+					border-radius: 23px;
+					overflow: hidden;
+				}
+				.section-b__post-text {
+					margin-left: 16px;
+					float: left;
+					line-height: 16px;
+					& > a {
+						font: 16px "Open Sans Extrabold";
+						text-decoration: none;
+						color: #454545;
+					}
+					
+					& > span{
+						display: block;
+						font: 16px "OpenSans Light";
+					}
+				}
+			}
+			& > a {
+				float: right;
+				text-decoration: none;
+				font: 18px "League Gothic";
+				color: #454545;
+			}
+		}
+	}
+}

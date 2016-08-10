@@ -1,0 +1,75 @@
+.section-c__container {
+	position: relative;
+	background: #f9f9f9;
+	border-top: 1px solid #fefefe;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+	overflow: hidden;
+	.section-c {
+		margin: 25px auto;
+		width: 768px;
+		overflow: hidden;
+		.section-c__sprite {
+			padding: 0 20px;
+			overflow: hidden;
+			.section-c__sprite-brands1,
+			.section-c__sprite-brands2,
+			.section-c__sprite-brands3,
+			.section-c__sprite-brands4,
+			.section-c__sprite-brands5,
+			.section-c__sprite-brands6 {
+				margin: 25px 5px;
+				float: left;
+				width: 110px;
+				height: 75px;
+				background: url("../images/section-c__sprite.png") left top;
+			}
+			.section-c__sprite-brands1 {
+				background-position: 0 0;
+			}
+			.section-c__sprite-brands2 {
+				background-position: -110px 0;
+			}
+			.section-c__sprite-brands3 {
+				background-position: 0 -75px;
+			}
+			.section-c__sprite-brands4 {
+				background-position: -110px -75px;
+			}
+			.section-c__sprite-brands5 {
+				background-position: 0 -150px;
+			}
+			.section-c__sprite-brands6 {
+				background-position: -110px -150px;
+			}
+		}
+	}
+}
+.section-d__container {
+	position: relative;
+	overflow: hidden;
+	display: block;
+	border-top: 1px solid #d8d8d8;
+	background: #ececec;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+	.section-d {
+		overflow: hidden;
+		margin: 80px auto 30px auto;
+		width: 768px;
+		.section-d__textbox {
+			width: 205px;
+			margin: 0 25px 60px;
+			float: left;
+			color: #454545;
+			& > h4, p {
+				margin: 0 20px;
+			}
+			& > h4 {
+				font: 24px "League Gothic";
+				line-height: 30px;
+			}
+			& > p {
+				font: 16px "OpenSans Light";
+			}
+		}
+	}
+}

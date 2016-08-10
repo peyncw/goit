@@ -1,0 +1,50 @@
+.section-a__container {
+	position: relative;
+	border-top: 1px solid #36283c;
+	border-bottom: 1px solid #fff;
+	background: linear-gradient(to top, #36293d, #745183);
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+	.section-a {
+		margin: 0 auto;
+		padding: 70px 0 45px 0;
+		width: 320px;
+		overflow: hidden;
+		& > div {
+			float: left;
+			overflow: hidden;
+			width: 320px;
+			margin-bottom: 25px;
+		}
+		.section-a__img {
+			float: left;
+			margin: 5px 0 0 30px;
+			width: 30px;
+			height: 30px;
+		}
+		.section-a__textbox {
+			float: right;
+			width: 215px;
+			margin-right: 25px;
+			& > h4 {
+				margin-bottom: 5px;
+				font: 24px "League Gothic";
+				color: #fff;
+			}
+			& > p {
+				margin-bottom: 20px;
+				font: 16px "OpenSans Light";
+				color: #fff;
+			}
+			& > a {
+				display: inline-block;
+				float: right;
+				font: 18px "League Gothic";
+				color: #fff;
+				text-decoration: none;
+				&:hover {
+						text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+				}
+			}
+		}
+	}
+}

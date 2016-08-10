@@ -1,0 +1,19 @@
+.section-a__container {
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#745183', endColorstr='#36293d',GradientType=0 );
+	.section-a {
+		.section-a__img {
+			& > img {
+				display: none;//
+			}
+		}
+		.section-a__img-1 {
+			background: url("../images/section-a__item1.png") no-repeat center;//
+		}
+		.section-a__img-2 {
+			background: url("../images/section-a__item1.png") no-repeat center;//
+		}
+		.section-a__img-3 {
+			background: url("../images/section-a__item1.png") no-repeat center;//
+		}
+	}
+}
