@@ -1,0 +1,134 @@
+.header-container {
+	padding-top: 70px;
+	background: url("../images/header-background.jpg") no-repeat top center;
+	& > header {
+		display: block;
+		margin: 0 auto;
+		width: 768px;
+		min-height: 446px;
+		max-height: 869px;
+		.home-logo {
+			margin-left: 20px;
+			float: left;
+			width: 152px;
+			height: 40px;
+			background: url("../images/home-logo__svg.svg") no-repeat center;
+		}
+		.main-menu {
+			padding-top: 30px;
+			clear: both;
+			.main-menu__wrapper {
+				margin: 0 20px;
+				list-style: none;
+				text-align: center;
+				overflow: hidden;
+				& > li {
+					display: inline-block;
+					float: left;
+					margin-right: 50px;
+					& > a {
+						display: inline-block;
+						height: 30px;
+						text-decoration: none;
+						font: 24px "League Gothic";
+						line-height: 30px;
+						color: #fff;
+						text-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
+					}
+					& > a:hover {
+						border-bottom: 3px solid #edbfff;
+					}
+				}
+				.main-menu__item1 {
+					height: 36px;
+					& > span {
+						display: block;
+						margin: 0 auto;
+						height: 30px;
+						font: 24px "League Gothic";
+						line-height: 30px;
+						color: #fff;
+						border-bottom: 3px solid #edbfff;
+						text-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
+					}
+				}
+			}
+		}
+		.header__slider-background {
+			display: block;
+			margin-top: 75px;
+			position: absolute;
+			height: 400px;
+			left: 0;
+			right: 0;
+			background: rgba(0, 0, 0, 0.2);
+		}
+		.header__slider {
+			margin: 50px auto 0 auto;
+			overflow: hidden;
+			position: relative;
+			.header__slider-body {
+				margin: 125px 134px 0 10px;
+				width: 280px;
+				float: left;
+				text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+				& > h1 {
+					font: 36px "League Gothic";
+					color: #fefefe;
+				}
+				& > span {
+					display: block;
+					font: 18px "League Gothic";
+					color: #edbfff;
+				}
+				& > p {
+					font: 16px "OpenSans Light";
+					color: #f6f6f6;
+				}
+			}
+			.header__slider-phone {
+				float: left;
+				width: 300px;
+				height: 430px;
+				background: url("../images/header__descktop-slider-phone.png") no-repeat center;
+			}
+			.header__slider-arrow-left, .header__slider-arrow-right {
+				display: block;
+				width: 22px;
+				height: 430px;
+				float: left;
+
+			}
+			.header__slider-arrow-left {
+				background: url("../images/arrow-left.svg") no-repeat center;
+			}
+			.header__slider-arrow-right {
+				background: url("../images/arrow-right.svg") no-repeat center;
+			}
+			.header-button {
+				float: right;
+				margin: 0 140px 100px 0;
+				padding-top: 30px;
+				clear: both;
+				width: 84px;
+				overflow: hidden;
+				& > div {
+					margin-right: 5px;
+					float: left;
+					width: 17px;
+					height: 17px;
+					background: url("../images/header-button__non-active.svg") no-repeat center;
+					&:last-child {
+						margin-right: 0;
+					}
+					&:hover {
+						cursor: pointer;
+					}
+				}
+				.header-button__active {
+					background: url("../images/header-button__active.svg") no-repeat center;
+				}
+			}
+		}
+	}
+}

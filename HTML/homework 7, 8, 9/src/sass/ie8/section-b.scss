@@ -1,0 +1,18 @@
+.section-b__container {
+	.section-b {
+		.section-b__comments {
+			.section-b__slider-comments {
+				width: 90px;
+				& > div {
+					height: 18px;
+					background: url("../images/slider__button-sprite.png") no-repeat; //
+					background-position: -2px -22px; //
+				}
+				.section-b__slider-comments-active {
+					background: url("../images/slider__button-sprite.png") no-repeat; //
+					background-position: -22px -22px; //
+				}
+			}
+		}
+	}
+}

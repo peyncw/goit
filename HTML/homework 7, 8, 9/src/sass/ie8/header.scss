@@ -1,0 +1,38 @@
+.header-container {
+	& > header {
+		.home-logo {
+			background: url("../images/home-logo__ie8.png") no-repeat center;
+		}
+		.header__slider-background {
+			background: #000;
+			filter:progid:DXImageTransform.Microsoft.Alpha(opacity=20);
+		}
+		.header__slider {
+			.header__slider-arrow-left, .header__slider-arrow-right {
+				margin-top: 180px;//
+				height: 50px;//
+			}
+			.header__slider-arrow-left {
+				background: url("../images/header__arrow-sprite.png") no-repeat bottom;//
+				background-position: -2px 0;//
+			}
+			.header__slider-arrow-right {
+				background: url("../images/header__arrow-sprite.png") no-repeat center;//
+				background-position: -45px 0;//
+			}
+			.header-button {
+				width: 90px;//
+				& > div {
+					height: 18px;//
+					background: url("../images/slider__button-sprite.png") no-repeat;//
+					background-position: -2px -2px;//
+				}
+				.header-button__active {
+					background: url("../images/slider__button-sprite.png") no-repeat;//
+					background-position: -24px -2px;//
+				}
+			}
+		}
+	}
+}
+

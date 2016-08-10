@@ -1,0 +1,106 @@
+@media all and #{$desktop} {
+	@import "../descktop";
+	.header-container {
+		& > header {
+			width: 100%;
+			overflow: hidden;
+			.main-menu {
+				float: right;
+				padding-top: 5px;
+				clear: none;
+			}
+			.header__slider-background {
+				margin-top: 210px;
+			}
+			.header__descktop-wrapper {
+				width: 960px;
+				margin: 0 auto;
+				clear: both;
+			}
+			.header__slider {
+				margin: 190px auto 0 auto;
+				overflow: auto;
+				position: relative;
+				.header__slider-body {
+					margin: 125px 160px 0 0;
+					width: 500px;
+				}
+				.header__slider-arrow-left, .header__slider-arrow-right {
+					position: absolute;
+				}
+				.header__slider-arrow-left {
+					left: 0;
+					margin-left: 10px;
+				}
+				.header__slider-arrow-right {
+					right: 0;
+					margin-right: 10px;
+				}
+			}
+		}
+	}
+	.section-a__container {
+		.section-a {
+			width: 960px;
+			& > div {
+				width: 270px;
+			}
+			.section-a__textbox {
+				width: 225px;
+			}
+		}
+	}
+	.section-b__container {
+		.section-b {
+			width: 960px;
+			.section-b__comments {
+				.section-b__comments-box {
+					margin-left: 22px;
+					width: 430px;
+					.section-b__textbox {
+						width: 350px;
+					}
+				}
+			}
+			.section-b__update-post {
+				width: 425px;
+				padding: 110px 20px 0 20px;
+			}
+		}
+	}
+	.section-c__container {
+		.section-c {
+			width: 960px;
+			.section-c__sprite {
+				.section-c__sprite-brands1,
+				.section-c__sprite-brands2,
+				.section-c__sprite-brands3,
+				.section-c__sprite-brands4,
+				.section-c__sprite-brands5,
+				.section-c__sprite-brands6 {
+					margin: 25px 20px;
+				}
+			}
+		}
+	}
+	.section-d__container {
+		.section-d {
+			width: 960px;
+			.section-d__textbox {
+				width: 280px;
+				margin: 0 20px 60px;
+			}
+		}
+	}
+	.footer__container {
+		.footer {
+			width: 960px;
+			.footer__menu {
+				margin: 0;
+			}
+			.footer__link {
+				margin: 0 20px 40px 0;
+			}
+		}
+	}
+}
