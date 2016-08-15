@@ -1,6 +1,7 @@
 .header-container {
 	padding-top: 70px;
 	background: url("../images/header-background.jpg") no-repeat top center;
+	background-size: cover;
 	& > header {
 		display: block;
 		margin: 0 auto;
