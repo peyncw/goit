@@ -63,8 +63,10 @@
 				}
 			}
 			.section-b__update-post {
-				width: 425px;
 				padding: 110px 20px 0 20px;
+				.section-b__post {
+					width: 420px;
+				}
 			}
 		}
 	}
