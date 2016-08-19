@@ -33,20 +33,22 @@ function homeWork1MetodPow() {
 function homeWork2MetodArrFor() {
 	var arrName = [];
 	var maxNames = 5;
+	var addName;
 	for (var i = 0; i < maxNames; i++) {
-		var addName = prompt('Enter the name ' + (i + 1) + ':', '');
+		addName = prompt('Enter the name ' + (i + 1) + ':', '');
 		if (isNaN(+addName)) {
 			addName = addName[0].toUpperCase() + addName.substr(1).toLowerCase();
 			arrName.push(addName);
 		} else {
 			alert('Please enter Text Name! Not number!');
-			break;
+			i = --i;
 		}
 	}
 	var arrNameLength = arrName.length;
+	var searchName;
 	if (arrNameLength === 5) {
 		while (true) {
-			var searchName = prompt('Enter the Search Name:', '');
+			searchName = prompt('Enter the Search Name:', '');
 			if (isNaN(searchName)) {
 				searchName = searchName[0].toUpperCase() + searchName.substr(1).toLowerCase();
 				console.log(searchName);
