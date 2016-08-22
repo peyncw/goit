@@ -1,0 +1,18 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+.form {
+	margin: 0 auto;
+	width: 400px;
+	text-align: center;
+	border-radius: 20px;
+	font:14px Tahoma;
+}
+.form > ul > h2 {
+	margin: 10px;
+}
+.form > ul > li {
+	margin: 5px;
+	list-style: none;
+}
