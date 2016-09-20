@@ -1,0 +1,373 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.slider {
+	margin: 20px auto;
+	position: relative;
+	border: 10px solid #fff;
+	width: 600px;
+	height: 400px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-box-shadow: 0 0 2px #999;
+	-moz-box-shadow: 0 0 2px #999;
+	box-shadow: 0 0 2px #999;
+}
+
+.jcarousel-pagination {
+	width: 63px;
+	margin: 0 auto;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 20px;
+}
+
+.jcarousel-pagination a {
+	float: left;
+	margin: 0 3px;
+	width: 15px;
+	height: 15px;
+	border-radius: 7px;
+	box-sizing: border-box;
+	background: #f1f1f1;
+	box-shadow: 0 0 2px #c5c5c5;
+}
+
+a.jcarousel-pagination__active {
+	background: #343434;
+}
+
+.jcarousel {
+	position: relative;
+	overflow: hidden;
+}
+
+.jcarousel ul {
+	width: 20000em;
+	position: relative;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.jcarousel li {
+	float: left;
+}
+
+.jcarousel-control-prev, .jcarousel-control-next {
+	display: block;
+	position: relative;
+	bottom: 200px;
+	width: 40px;
+	height: 40px;
+	border-radius: 20px;
+	background: #606060;
+	text-decoration: none;
+	text-align: center;
+	font: 30px Arial;
+	color: #fff;
+	line-height: 43px;
+}
+
+.jcarousel-control-prev:hover, .jcarousel-control-next:hover {
+	background: #1e1e1e;
+}
+
+.jcarousel-control-prev {
+	float: left;
+	right: 60px;
+}
+
+.jcarousel-control-next {
+	float: right;
+	left: 60px;
+}
+
+/*
+	styles for select
+*/
+.select {
+	width: 200px;
+	margin: 0 auto;
+}
+
+.cusel,
+.cuselFrameRight,
+.jScrollArrowUp,
+.jScrollArrowDown {
+	background: url(../images/select_bg.png) no-repeat;
+}
+
+.cusel { /* общий вид селекта включая стрелку справа */
+	height: 26px;
+	background-position: left top;
+	display: inline-block;
+	position: relative;
+	cursor: pointer;
+	font-size: 14px;
+}
+
+.cuselFrameRight { /* левая часть селект. обычно скругление и левая граница */
+	position: absolute;
+	z-index: 2;
+	top: 0;
+	right: 0;
+	height: 100%;
+	width: 42px;
+	background-position: right top;
+}
+
+.cuselText { /* контейнер для отображенного текста селект */
+	height: 14px;
+	padding: 6px 0 0 7px; /* подбираем отступы и высоту для видимого текста в селекте */
+	cursor: pointer;
+	overflow: hidden;
+	position: relative;
+	z-index: 1;
+	font: 12px Arial, "Helvetica CY", "Nimbus Sans L", sans-serif; /* шрифты */
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.cusel-scroll-pane > span { /* оформление оптиона */
+	display: block;
+	cursor: pointer;
+	white-space: nowrap;
+	padding: 2px 15px 2px 5px; /* паддинг справа - это отступ текста от ползунка */
+	zoom: 1;
+}
+
+.cusel-scroll-pane > span:hover,
+.cusel-scroll-pane .cuselOptHover { /* реакция оптиона на наведение */
+	background: Highlight;
+	color: #fff;
+}
+
+.cusel-scroll-wrap .cuselActive { /* оформление активного оптиона в списке */
+	background: #CC0000;
+	color: #fff;
+	cursor: default;
+}
+
+/*
+	styles for focus and hover
+*/
+.cusel:hover,
+.cusel:hover .cuselFrameRight,
+.cusel:focus,
+.cusel:focus .cuselFrameRight {
+	background-image: url(../images/select_bg_focus.png);
+}
+
+/*
+	styles for disabled select
+*/
+.cusel.classDisCusel,
+.cusel.classDisCusel .cuselFrameRight {
+	background-image: url(../images/select_bg.png);
+	filter: alpha(opacity=65);
+	opacity: .65;
+	cursor: default;
+}
+
+.classDisCusel .cuselText {
+	cursor: default;
+}
+
+/* Dropdown box for elements */
+#cuselBox {
+	position: absolute;
+	z-index: 9999;
+}
+
+/*
+	styles for scrollbar
+*/
+.cusel-scroll-wrap { /* контейнер для блока с прокруткой */
+	visibility: hidden;
+	min-width: 100%;
+	width: auto;
+}
+
+.cusel-scroll-pane {
+	background: #fff; /* фон выпадающего списка */
+}
+
+.cusel-scroll-wrap .jScrollPaneContainer {
+	position: relative;
+	overflow: hidden;
+	z-index: 5;
+	border: 1px solid #999; /* границы выпадающего спиcка */
+}
+
+.cusel-scroll-wrap .jScrollPaneTrack { /* трек для ползунка прокрутки */
+	height: 100%;
+	width: 7px !important;
+	background: #ccc;
+	position: absolute;
+	top: 0;
+	right: 4px;
+}
+
+.cusel-scroll-wrap .jScrollPaneDrag { /* ползунок */
+	position: absolute;
+	background: #fff;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	cursor: pointer;
+	width: 13px !important;
+	height: 25px !important;
+	right: -4px;
+}
+
+.cusel-scroll-wrap .jScrollPaneDragTop {
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+}
+
+.cusel-scroll-wrap .jScrollPaneDragBottom {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	overflow: hidden;
+}
+
+.cusel-scroll-wrap .jScrollArrowUp { /* стрелка вверх */
+	position: absolute;
+	top: 0;
+	right: 2px;
+	width: 26px;
+	height: 12px;
+	cursor: pointer;
+	background-position: -2px -26px;
+	overflow: hidden;
+}
+
+.cusel-scroll-wrap .jScrollArrowDown { /* стрелка вниз */
+	width: 25px;
+	height: 12px;
+	position: absolute;
+	top: auto;
+	bottom: 0;
+	right: 3px;
+	cursor: pointer;
+	background-position: -21px -26px;
+	overflow: hidden;
+}
+
+.checkbox {
+	width: 120px;
+	margin: 20px auto;
+}
+
+.checkbox > label {
+	display: block;
+}
+
+.niceCheckbox {
+	margin-left: 15px;
+	width: 17px;
+	height: 17px;
+	display: inline-block;
+	cursor: pointer;
+	background: url(../images/checkbox-sprite.png);
+}
+
+.niceCheckbox input {
+	display: none;
+}
+
+.checkbox2 {
+	width: 120px;
+	margin: 0 auto;
+}
+
+.checkbox2 input[type=checkbox] {
+	position: absolute;
+	clip: rect(0, 0, 0, 0);
+}
+
+.checkbox2 label {
+	cursor: pointer;
+}
+
+.checkbox2 label:after {
+	content: " ";
+	display: inline-block;
+	width: 17px;
+	height: 17px;
+	background: url(../images/checkbox-sprite.png);
+	position: relative;
+	top: 3px;
+	margin-left: 15px;
+}
+
+.checkbox2 input[type=checkbox]:checked + label:after {
+	background-position: 0 -17px;
+}
+
+.menu {
+	background: #ff6082;
+	overflow: hidden;
+	margin: 20px 0;
+}
+
+.menu__JSub {
+	margin: 0 auto;
+	width: 800px;
+}
+
+.menu__JSub li{
+	display: block;
+	list-style: none;
+	height: 40px;
+}
+
+.menu__JSub > li{
+	float: left;
+}
+
+.menu__JSub >li ul {
+	position: absolute;
+	background-color: #ff6082;
+}
+
+.menu__JSub a {
+	display: block;
+	width: 100px;
+	height: 40px;
+	text-align: center;
+	color: #333333;
+	text-decoration: none;
+	font: 16px Arial;
+	line-height: 40px;
+}
+
+.menu__JSub li li {
+	position: relative;
+	border-bottom: 1px solid #fff;
+}
+
+.menu__JSub > li li ul {
+	float: left;
+	top: 0;
+}
+
+.JSubArrow > a{
+	border-right: 5px solid #fff;
+	box-sizing: border-box;
+}
+
+.body {
+	margin: 0 auto;
+	width: 800px;
+	height: 500px;
+	background: #e3e3e3;
+}
