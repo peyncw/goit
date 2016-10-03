@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js"
+			integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+	<script src="js/jquery.carousel.js"></script>
+	<script src="https://cdn.jsdelivr.net/lodash/4.16.3/lodash.min.js"></script>
+	<script src="js/app.js"></script>
+</head>
+<body>
+<h1 class="logo">Carousel jQuery plugin</h1>
+<div class="peyCarousel">
+	<a href="#" class="carousel-prev"><</a>
+	<div class="carousel">
+		<ul>
+			<li><img src="images/img1.jpg" alt=""></li>
+			<li><img src="images/img2.jpg" alt=""></li>
+			<li><img src="images/img3.jpg" alt=""></li>
+			<li><img src="images/img4.jpg" alt=""></li>
+			<li><img src="images/img5.jpg" alt=""></li>
+			<li><img src="images/img6.jpg" alt=""></li>
+			<li><img src="images/img1.jpg" alt=""></li>
+			<li><img src="images/img2.jpg" alt=""></li>
+			<li><img src="images/img3.jpg" alt=""></li>
+			<li><img src="images/img4.jpg" alt=""></li>
+			<li><img src="images/img5.jpg" alt=""></li>
+			<li><img src="images/img6.jpg" alt=""></li>
+			<li><img src="images/img1.jpg" alt=""></li>
+			<li><img src="images/img2.jpg" alt=""></li>
+			<li><img src="images/img3.jpg" alt=""></li>
+		</ul>
+	</div>
+	<a href="#" class="carousel-next">></a>
+</div>
+<script type="text/template" id="template">
+	<div class="container1">
+		<h1><%-container1.title%></h1>
+		<img src=<%-container1.photo%> alt="">
+		<p><%-container1.about%></p>
+	</div>
+	<div class="container2">
+		<h3><%-container2.title%></h3>
+		<ul>
+			<% container2.about.forEach(function(item) { %>
+			<li><%-item%></li><%
+			}); %>
+		</ul>
+	</div>
+	<div class="container3">
+		<h3><%-container3.title1%></h3>
+		<p><%-container3.sameText1%></p>
+		<h3><%-container3.title2%></h3>
+		<a href=<%-container3.sameText2.link%>><%-container3.sameText2.title%></a>
+	</div>
+	<div class="container4">
+		<h3><%-container4.title%></h3>
+		<p><%-container4.sameText%></p>
+	</div>
+</script>
+</body>
+</html>
