@@ -1,0 +1,41 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+h1.test {
+	text-align: center;
+}
+
+ul.test {
+	margin: 0 auto;
+	width: 400px;
+	text-align: center;
+	border-radius: 20px;
+	font:14px Tahoma;
+}
+ul.test h3 {
+	margin: 10px;
+}
+ul.test > li {
+	margin: 5px;
+	list-style: none;
+}
+
+#submitTest {
+	margin: 0 auto;
+	display: block;
+}
+
+.modalWindow {
+	display: block;
+	position: absolute;
+	margin: auto auto;
+	left: 0;
+	right: 0;
+	top: 40%;
+	bottom: 60%;
+	width: 600px;
+	height: 300px;
+	background: #fad205;
+}
