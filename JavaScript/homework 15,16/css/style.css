@@ -1,0 +1,21 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+.img {
+	float: left;
+	overflow: hidden;
+	margin: 10px 10px;
+	display: inline-block;
+}
+
+.append {
+	width: 1024px;
+	margin: 0 auto;
+}
+
+.form {
+	width: 500px;
+	text-align: center;
+	margin: 20px auto;
+}
