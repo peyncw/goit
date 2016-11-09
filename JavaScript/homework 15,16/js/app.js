@@ -8,23 +8,46 @@ document.addEventListener("DOMContentLoaded", function () {
 		this.weight = "95 kg";
 	}
 
+	function Worker() {
+		this.job = "job";
+		this.salary = "salary";
+		this.work = function(job, salary) {
+			this.job = job;
+			this.salary = salary;
+		}
+	}
 
-	Human.prototype.Worker = function (job, salary) {
-		this.job = job;
-		this.salary = salary;
-		console.log(this.job, this.salary);
-	};
+	Worker.prototype = new Human();
+	var worker = new Worker();
 
-	Human.prototype.Student = function (study, scholarship) {
-		this.study = study;
-		this.scholarship = scholarship;
-		console.log(this.study, this.scholarship);
-	};
+	function Student() {
+		this.study = "study";
+		this.scholarship = "scholarship";
+		this.watchSerial = function(study, scholarship) {
+			this.study = study;
+			this.scholarship = scholarship;
+		}
+	}
 
-	var human = new Human();
+	Student.prototype = new Human();
+	var student = new Student();
 
-	human.Worker("student", "5000$");
-	human.Student("KPI", "800UAH");
+
+	console.log(student.age, worker.gender);
+	console.log("************************************");
+	console.log(student.study, student.scholarship);
+	student.watchSerial("KPI", "800uah");
+	console.log(student.study, student.scholarship);
+	console.log("************************************");
+	console.log(worker.job, worker.salary);
+	worker.work("student", "5000$");
+	console.log(worker.job, worker.salary);
+	console.log("************************************");
+
+
+
+
+
 });
 
 
