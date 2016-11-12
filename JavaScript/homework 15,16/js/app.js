@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	function Worker() {
 		this.job = "job";
 		this.salary = "salary";
-		this.work = function(job, salary) {
+		this.work = function (job, salary) {
 			this.job = job;
 			this.salary = salary;
 		}
@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	function Student() {
 		this.study = "study";
 		this.scholarship = "scholarship";
-		this.watchSerial = function(study, scholarship) {
+		this.watchSerial = function (study, scholarship) {
 			this.study = study;
 			this.scholarship = scholarship;
 		}
@@ -45,11 +45,38 @@ document.addEventListener("DOMContentLoaded", function () {
 	console.log("************************************");
 
 
+	/**
+	 * Ниже пример на чистим JS, хотел понять как оно работает
+	 */
 
-
+	//var enterWithKey = document.getElementById("word");
+	//
+	//enterWithKey.addEventListener("keydown", function (e) {
+	//	if (e.which == 13) {
+	//		var word = enterWithKey.value,
+	//			XML = new XMLHttpRequest(),
+	//			obj;
+	//
+	//		XML.open("GET", "https://pixabay.com/api/?key=3118779-be29778b1b1db18e334fc6de3&q=" + word +
+	//			"&image_type=photo", true);
+	//		XML.send(null);
+	//		XML.onreadystatechange = function () {
+	//			if (this.status == 200 && this.readyState == 4) {
+	//
+	//				var obj = JSON.parse(XML.responseText);
+	//
+	//				for (var i = 0; i < obj.hits.length; i++) {
+	//					var img = document.createElement("img");
+	//					img.setAttribute("src", obj.hits[i].webformatURL);
+	//					document.body.appendChild(img);
+	//				}
+	//			}
+	//		};
+	//
+	//	}
+	//});
 
 });
-
 
 $(function () {
 
@@ -61,7 +88,6 @@ $(function () {
 		word = $("#word").val();
 		$.getJSON("https://pixabay.com/api/?key=3118779-be29778b1b1db18e334fc6de3&q=" + word + "&image_type=photo",
 			function (data) {
-				console.log(data);
 				$.each(data.hits, function (i, item) {
 					$("<div class='img'>").append($("<img/>").css("maxHeight", "200px").attr("src", item.webformatURL))
 						.appendTo(".append");
@@ -82,4 +108,10 @@ $(function () {
 	);
 
 });
+
+
+
+
+
+
 
