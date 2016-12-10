@@ -1,0 +1,70 @@
+.slider {
+	margin: 40px auto 0 auto;
+	width: 1160px;
+	.slider__body {
+		height: 470px;
+		width: 1160px;
+		overflow: hidden;
+		position: relative;
+		.slider__text {
+			font: bold 54px "UbuntuLight";
+			position: absolute;
+			color: #fff;
+			left: 36px;
+			bottom: 40px;
+			opacity: 0;
+			h4 {
+				display: table;
+				line-height: 90px;
+				padding: 0 35px;
+				text-align: center;
+				background: rgba(0, 0, 0, 0.90);
+				&:first-child {
+					display: inline-block;
+					color: #f4b60d;
+				}
+				&:last-child {
+					display: inline-block;
+				}
+			}
+		}
+		.slider__nav {
+			width: 90px;
+			margin: 0 auto;
+			position: absolute;
+			bottom: 20px;
+			left: 0;
+			right: 0;
+			z-index: 10;
+			li {
+				list-style: none;
+				margin: 0 7.5px;
+				float: left;
+				width: 15px;
+				height: 15px;
+				background: #fff;
+				line-height: 15px;
+				text-align: center;
+				&:hover {
+					cursor: pointer;
+					div {
+						background: rgba(0, 29, 29, 0.51);
+					}
+				}
+				div {
+					display: inline-block;
+					width: 9px;
+					height: 9px;
+				}
+			}
+			li.checkboxOn {
+				div {
+					background: #001d1d;
+				}
+			}
+		}
+		& > img {
+			position: absolute;
+		}
+	}
+}
